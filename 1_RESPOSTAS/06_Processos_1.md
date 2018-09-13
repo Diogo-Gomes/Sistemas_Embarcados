@@ -27,13 +27,19 @@ A função fork() tem como vantagem o procesdsamento de determinadas ações em 
 5 - Quais são as características básicas das seguintes funções:
 
 (a) execp()?
+utilização da variável de ambiente PATH [execlp() e execvp()]. Esta função irá buscar a nova imagem do processo nos diretórios contidos na variável PATH. Para as versões sem a letra “p“, deverá ser passada uma string contendo o caminho completo para o arquivo executável.
 
 (b) execv()?
+vetor de argumentos [execv(), execve() e execvp()]. Os argumentos que serão recebidos em argv são passados em um vetor do tipo char* que já contém todas as strings previamente carregadas.
 
 (c) exece()?
+variáveis de ambiente [execle() e execve()]. O último parâmetro destas funções é um vetor para strings (char *) que será recebido pelo novo programa no argumento envp contendo variáveis de ambiente pertinentes para sua execução. Para as versões sem a letra “e“, o ambiente é adquirido a partir de uma variável externa (extern char **environ) já declarada na biblioteca unistd.h.
 
 (d) execvp()?
 
+
 (e) execve()?
 
+
 (f) execle()?
+
