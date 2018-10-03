@@ -1,17 +1,71 @@
-1 - Escreva o texto "Ola mundo cruel!" em um arquivo denominado "Ola_mundo.txt". Apresente o conteúdo deste arquivo no terminal.                        
+1-
+```C
+echo "Olá mundo cruel" >> ola.txt
+nano ola.txt
+```
+------------------------------------------------------
+ 2- 
+ ```C
+ezerras@Bezerras:/$ sudo su
+root@Bezerras:/# cd
+root@Bezerras:~# ls -la
+total 20
+drwx------  3 root root 4096 Jul 30 21:47 .
+drwxr-xr-x 24 root root 4096 Set  6 11:34 ..
+-rw-r--r--  1 root root 3106 Out 22  2015 .bashrc
+drwx------  2 root root 4096 Jul 30 21:41 .cache
+-rw-r--r--  1 root root  148 Ago 17  2015 .profile
+root@Bezerras:~# 
+	
 
-#include <stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-printf("Olá Mundo Cruel !\n");
 }
+```
+-----------------------------------------------------------
+3-
 
-2 - Apresente o nome de todos os arquivos e pastas na pasta 'root'.
+file*
 
-3 - Apresente o tipo de todos os arquivos e pastas na pasta 'root'.
+4 - file * | grep "directory"
 
-4 - 
+5-
+
+6- ls *.txt
+arquivo.txt   cal_1996.txt  cal_2003.txt  cal_2010.txt  cal_2017.txt
+cal_1990.txt  cal_1997.txt  cal_2004.txt  cal_2011.txt  cal_2018.txt
+cal_1991.txt  cal_1998.txt  cal_2005.txt  cal_2012.txt  cal_2019.txt
+cal_1992.txt  cal_1999.txt  cal_2006.txt  cal_2013.txt  cal_2020.txt
+cal_1993.txt  cal_2000.txt  cal_2007.txt  cal_2014.txt  cal.txt
+cal_1994.txt  cal_2001.txt  cal_2008.txt  cal_2015.txt  cal_types.txt
+cal_1995.txt  cal_2002.txt  cal_2009.txt  cal_2016.txt
+
+7- ls *.png
+BusinessTux.png               linux.png
+linux1.png                    Tux-in-a-suit.png
+linux2.png                    tux-linux-professional_0-100520358-orig.png
+linux3.png                    TUX.png
+linux_inside.png              xanderrun-tux-construction-8454.png
+linux-penguin-icon-39742.png
+
+8- ls *.jpg
+d36f1a2be6a927ac3e2e1e4eacdedded.jpg  oRva1OGD.jpg
+oRva1OGD_400x400.jpg                  zz39112bb5.jpg
+
+9- ls *.gif
+1086970.gif
+
+10-  ls .| grep "cal"
+cal_1990.txt cal_1991.txt cal_1992.txt cal_1993.txt cal_1994.txt cal_1995.txt cal_1996.txt cal_1997.txt cal_1998.txt 
+cal_1999.txt cal_2000.txt cal_2001.txt cal_2002.txt cal_2003.txt cal_2004.txt cal_2005.txt cal_2006.txt cal_2007.txt
+cal_2008.txt cal_2009.txt cal_2010.txt cal_2011.txt cal_2012.txt cal_2013.txt cal_2014.txt cal_2015.txt cal_2016.txt
+cal_2017.txt cal_2018.txt cal_2019.txt cal_2020.txt cal.txt cal_types.txt
+
+11- ls .| grep "tux"
+tux-linux-professional_0-100520358-orig.png
+xanderrun-tux-construction-8454.png
+
+12- ls .| grep "^tux"
+tux-linux-professional_0-100520358-orig.png
+
+
 
 
